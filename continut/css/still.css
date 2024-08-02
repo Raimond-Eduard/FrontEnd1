@@ -1,0 +1,180 @@
+/*
+Navbar
+*/
+
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #8CC7A1;
+    height: 1.8em;
+    margin: -0.5em;
+    padding-top: 0.7em;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    
+}
+
+#navbar a{
+    padding-left: 2%;
+    text-decoration: none;
+    color: #FFD9DA;
+    background-color: #8CC7A1;
+    padding-top: 0.7em;
+    margin-top: -0.7em;
+    padding-right: 2%;
+    border: 2px solid #97EAD2;
+}
+
+/*
+Stil aplicat logo-ului din index.html
+*/
+#logo{
+    width: 5%;
+}
+
+
+/*
+Background static si content ce se da scroll peste background
+*/
+
+html{
+    background-image: url("../imagini/bg1.jpg");
+    background-size: cover;
+    background-color: rgba(0 ,0, 0, 1);
+    width: auto;
+    margin: 0px;
+    height: 100vh;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0px;
+}
+
+/*
+Imagine din pagina acasa.html
+*/
+
+#img1{
+    width: 30em;
+}
+/*
+Container folosit pe aproape toate paginile pentru stilizarea textului si a contentului
+*/
+
+.home-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2.5em;
+    padding: 5em;
+    background-color: rgba(12, 9, 13, 0.7);
+    color: #E0D3DE;
+}
+
+/*
+Container folosit pentru stilizarea formularului din pagina inregistreaza
+*/
+
+
+#form-container{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    width: 50em;
+    margin: 5%;
+    background-color: rgba(12, 9, 13, 0.7);
+    color: #E0D3DE;
+}
+
+.fieldsets-container{
+    padding: 3em;
+    margin-bottom: 30px;
+}
+/*
+Stilul aplicat desenului svg din pagina desen.html
+*/
+
+#guitar-svg{
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    background-color: rgba(12, 9, 13, 0.7);
+}
+
+/*
+Stil aplicat in pagina invat.html pentru butoanele ce navigheaza prin cele 3 sectiuni
+*/
+
+#section-navigator{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-self: center;
+}
+
+#section-navigator a{
+    padding-left: 10px;
+    padding-top: 1.5em;
+    padding-right: 10px;
+    text-decoration: none;
+    background-color: #1F7A8C;
+    height: 3em;
+    border: 2px solid #053C5E;
+    color: #E0D3DE;
+}
+
+/*
+Stil canvas
+*/
+
+
+#drawing{
+    width: 300;
+    height: 300;
+    border: 1px solid #eee;
+    background-color: white;
+}
+#canvas-frame{
+    width: 50%;
+    height: 80%
+}
+
+/*
+Stil pentru galeria video din pagina video.html
+*/
+
+.video-flexbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/*
+Media query, schimba culoarea la window resize
+*/
+
+
+@media screen and (max-width: 768px) {
+#navbar a{
+    height: auto;
+    width: auto;
+    background-color: #FFD9DA;
+    color:#053C5E;
+}
+
+#navbar{
+    background-color: #053C5E;
+}
+    
+}

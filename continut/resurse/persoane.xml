@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE persoane[
+    <!ELEMENT persoane (persoana+)>
+    <!ELEMENT persoana (nume, prenume, varsta, adresa, numar, localitate, judet, tara, limbi-vorbite+)>
+    <!ATTLIST persoana id ID #REQUIRED>
+    <!ELEMENT nume (#PCDATA)>
+    <!ELEMENT prenume (#PCDATA)>
+    <!ELEMENT varsta (#PCDATA)>
+    <!ELEMENT adresa (#PCDATA)>
+    <!ELEMENT numar (#PCDATA)>
+    <!ELEMENT localitate (#PCDATA)>
+    <!ELEMENT judet (#PCDATA)>
+    <!ELEMENT tara (#PCDATA)>
+    <!ELEMENT limbi-vorbite (#PCDATA)>
+]>
+<persoane>
+    <persoana id="id_1">
+        <nume>Popescu</nume>
+        <prenume>Ion</prenume>
+        <varsta>23</varsta>
+        <adresa>Aurel Vlaicu</adresa>
+        <numar>21</numar>
+        <localitate>Lespezi</localitate>
+        <judet>Iasi</judet>
+        <tara>Romania</tara>
+        <limbi-vorbite>Engleza</limbi-vorbite>
+        <limbi-vorbite>Romana</limbi-vorbite>
+        <limbi-vorbite>Franceza</limbi-vorbite>
+    </persoana>
+    <persoana id="id_2">
+        <nume>Puscasu</nume>
+        <prenume>Marin</prenume>
+        <varsta>28</varsta>
+        <adresa>Mihai Viteazu</adresa>
+        <numar>7</numar>
+        <localitate>Comanesti</localitate>
+        <judet>Bacau</judet>
+        <tara>Romania</tara>
+        
+        <limbi-vorbite>Engleza</limbi-vorbite>
+        <limbi-vorbite>Romana</limbi-vorbite>
+        <limbi-vorbite>Germana</limbi-vorbite>
+    </persoana>
+    <persoana id="id_3">
+        <nume>Iliescu</nume>
+        <prenume>Tom</prenume>
+        <varsta>25</varsta>
+        <adresa>Dealu Vaii</adresa>
+        <numar>32</numar>
+        <localitate>Paraul Rece</localitate>
+        <judet>Harghita</judet>
+        <tara>Romania</tara>
+    
+        <limbi-vorbite>Engleza</limbi-vorbite>
+        <limbi-vorbite>Romana</limbi-vorbite>
+        <limbi-vorbite>Maghiara</limbi-vorbite>
+    </persoana>
+</persoane>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <title>Cumpărături</title>
+        <link rel="stylesheet" href="css/still.css">
+    </head>
+    <body>
+        <div class="home-container">
+            <h2>Modelele momentan valabile: </h2>
+            <dl>
+                <dt><img src="imagini/chitara_ibanez1.png"></dt>
+                <dd>Model: AAD400CE</dd>
+                <dt><img src="imagini/chitara_ibanez2.png"></dt>
+                <dd>AAD440CE</dd>
+                <dt><img src="imagini/chitara_ibanez3.png"></dt>
+                <dd>RG8870</dd>
+            </dl>
+        
+        <div class="shopping-form">
+                <h3>Hai să facem Cumpărături</h3>
+                <label for="storage-type">Selectați unde se va stoca informația</label><br><br>
+                <select id="storage-type">
+                    <option value="local">Local storage</option>
+                    <option value="indexed">IndexedDB</option>
+                </select>
+                <br><br>
+                <label for="product-name">Nume produs: </label><br>
+                <input type="text" id="product-name"><br>
+                <label for="product-quantity">Cantitatea dorită: </label><br>
+                <input type="number" id="product-quantity"><br>
+                <button onclick="insertData()">Adaugă în coș!</button>
+            
+        </div>
+        <div id="cart">
+            
+        </div>
+    </div>
+    </body>
+    <script src="js/cumparaturi.js"></script>
+    <!-- <script src="js/worker.js"></script> -->
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <link rel="stylesheet" href="css/still.css">
+        <title>Acasă</title>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <nav id="navbar">
+        <img src="imagini/logo.png" id="logo">
+        <a href="#" onclick="schimbaContinut('acasa')">Acasă</a>
+        <a href="#" onclick="schimbaContinut('inregistreaza')">Înregistrează</a>
+        <a href="#" onclick="schimbaContinut('video')">Video</a>
+        <a href="#" onclick="schimbaContinut('despre')">Despre</a>
+        <a href="#" onclick="schimbaContinut('desen')">Desen</a>
+        <a href="#" onclick="schimbaContinut('invat')">Învăț</a>
+        <a href="#" onclick="schimbaContinut('persoane', 'js/persoane.js', 'loadXML')">Persoane</a>
+        <a href="#" onclick="schimbaContinut('verifica')">Verifică</a>
+        <a href="#" onclick="schimbaContinut('cumparaturi')">Cumpărături</a>
+    </nav>
+    
+    <main id="continut" onload="schimbaContinut('acasa')">
+
+    </main>
+    <footer>
+        <p>&copy; 2024</p>
+        <p>Autor: Butnaru Raimond-Eduard</p>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/persoane.js"></script>
+    <script src="js/cumparaturi.js"></script>
+    <!-- <script src="js/worker.js"></script> -->
+</html>

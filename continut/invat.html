@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <link rel="stylesheet" href="css/still.css">
+        <title>Învăț</title>
+    </head>
+    <body  onload="loadEverything()">
+        <div class="home-container">
+        <aside id="section-navigator">
+            <a href="#section1">Secțiunea 1</a>
+            <a href="#section2">Secțiunea 2</a>
+            <a href="#section3">Secțiunea 3</a>
+        </aside>
+        <section id="section1">
+            <h2>Informații utile pentru acest laborator:</h2>
+            <h4>Data:</h4>
+            <span id="datetime"></span>
+            <h4>Și ora:</h4>
+            <span id="hour"></span>
+            <h2>
+                Adresa URL curentă a paginii web este:
+            </h2>
+            <p id="web-page-URL"></p>
+            <h2>Ne aflăm la următoarele coordonate: </h2>
+            <p id="current-location"></p>
+            <h2>
+                Browser-ul current este:
+            </h2>
+            <p id="browser-display"></p>
+            <h2>
+                Sistemul de operare pe care lucram este:
+            </h2>
+            <p id="OS"></p>
+        </section>
+        <section id="section2">
+            <h1>Hai sa desenăm</h1>
+            <h2>Mai întâi selectăm culoarea: </h2>
+            <input type="color" id="color-picker" onclick="changeColor()"><br><br>
+            <p>Pentru a confirma culoarea vă rog apasați butonul înainte de a desena</p>
+            <!-- <button onclick="changeColor()">Schimbă culoarea</button> -->
+            <!-- <h2>Acum selectăm culoarea de umplere a desenului: </h2>
+            <input type="color" id="color-picker2"><br><br> -->
+                
+            <canvas id="drawing">
+
+            </canvas>
+            <button onclick="clearCanvas()">Reset</button>
+        </section>
+        <section id="section3">
+            <h1>Stoc</h1>
+            <table id="dynamicTable">
+                <tr>
+                    <td>Companie</td>
+                    <td>Tip chitară</td>
+                    <td>Model</td>
+                    <td>Număr bucăți</td>
+                </tr>
+                <tr>
+                    <td>Ibanez</td>
+                    <td>Acustică</td>
+                    <td>C24XZ</td>
+                    <td>3</td>
+                </tr>
+            </table><br><br>
+            
+            <h4>Eu m-am plictisit de inserat comenzi, mai faceți și voi</h4>
+            <p>Introduceți randul sau coloana</p>
+            <br>
+            <input type="text" id="position">
+            <label for="tableColor">Alegeti culoare pentru coloana</label>
+            <input type="color" id="tableColor" name="column" value="#145410" onclick="changeColor(this)">
+
+            <button onclick="insertColumn()">Coloană nouă</button>
+            <button onclick="insertRow()">Rând nou</button>
+            
+        </section>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>
